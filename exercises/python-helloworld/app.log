@@ -1,0 +1,12 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.39.164:5000/ (Press CTRL+C to quit)
+INFO:app:status request succesful
+INFO:werkzeug:127.0.0.1 - - [05/Jun/2021 17:41:45] "GET /status HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.39.164:5000/ (Press CTRL+C to quit)
+INFO:app:status request succesful
+INFO:werkzeug:127.0.0.1 - - [05/Jun/2021 17:44:40] "GET /status HTTP/1.1" 200 -
+INFO:app:main request succesful
+INFO:werkzeug:127.0.0.1 - - [05/Jun/2021 17:44:41] "GET / HTTP/1.1" 200 -

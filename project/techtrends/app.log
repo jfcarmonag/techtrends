@@ -1,0 +1,160 @@
+[2021-07-10 12:54:22,191] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 12:54:22,191] {_internal.py:225} INFO -  * Running on http://192.168.39.164:3111/ (Press CTRL+C to quit)
+[2021-07-10 12:54:30,657] {app.py:1454} ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 39, in index
+    connection = get_db_connection()
+  File "app.py", line 15, in get_db_connection
+    connection_count += 1
+UnboundLocalError: local variable 'connection_count' referenced before assignment
+[2021-07-10 12:54:30,736] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:54:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-07-10 12:54:31,087] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:54:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-07-10 12:56:02,098] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 12:56:02,098] {_internal.py:225} INFO -  * Running on http://192.168.39.164:3111/ (Press CTRL+C to quit)
+[2021-07-10 12:56:16,579] {app.py:1454} ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 41, in index
+    posts = connection.execute('SELECT * FROM posts').fetchall()
+sqlite3.OperationalError: no such table: posts
+[2021-07-10 12:56:16,582] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:56:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-07-10 12:56:18,236] {app.py:1454} ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 41, in index
+    posts = connection.execute('SELECT * FROM posts').fetchall()
+sqlite3.OperationalError: no such table: posts
+[2021-07-10 12:56:18,238] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:56:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2021-07-10 12:59:20,937] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 12:59:20,937] {_internal.py:225} INFO -  * Running on http://192.168.39.164:3111/ (Press CTRL+C to quit)
+[2021-07-10 12:59:32,410] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:59:32] "GET / HTTP/1.1" 200 -
+[2021-07-10 12:59:32,474] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:59:32] "GET /static/css/main.css HTTP/1.1" 200 -
+[2021-07-10 12:59:55,576] {app.py:1454} ERROR - Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 98, in metrics
+    response=json.dumps({"db_connection_count": connection_count, "post_count": count_posts()}),
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Cursor is not JSON serializable
+[2021-07-10 12:59:55,585] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 12:59:55] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[2021-07-10 13:01:49,776] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 13:01:49,776] {_internal.py:225} INFO -  * Running on http://192.168.39.164:3111/ (Press CTRL+C to quit)
+[2021-07-10 13:01:54,409] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:01:54] "GET / HTTP/1.1" 200 -
+[2021-07-10 13:01:54,500] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:01:54] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[2021-07-10 13:02:04,022] {app.py:1454} ERROR - Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 99, in metrics
+    response=json.dumps({"db_connection_count": connection_count, "post_count": p_count }),
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Cursor is not JSON serializable
+[2021-07-10 13:02:04,032] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:02:04] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[2021-07-10 13:02:39,339] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 13:02:39,340] {_internal.py:225} INFO -  * Running on http://192.168.39.164:3111/ (Press CTRL+C to quit)
+[2021-07-10 13:02:41,953] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:02:41] "GET / HTTP/1.1" 200 -
+[2021-07-10 13:02:42,003] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:02:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[2021-07-10 13:02:47,452] {app.py:105} INFO - Metrics request successfull
+[2021-07-10 13:02:47,453] {_internal.py:225} INFO - 192.168.39.164 - - [10/Jul/2021 13:02:47] "GET /metrics HTTP/1.1" 200 -
+[2021-07-10 14:43:28,667] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 14:43:28,668] {_internal.py:225} INFO -  * Running on http://192.168.0.9:3111/ (Press CTRL+C to quit)
+[2021-07-10 14:43:34,384] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:43:34] "GET / HTTP/1.1" 200 -
+[2021-07-10 14:43:34,443] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:43:34] "GET /static/css/main.css HTTP/1.1" 200 -
+[2021-07-10 14:43:34,788] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:43:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2021-07-10 14:43:40,426] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:43:40] "[33mGET /metric HTTP/1.1[0m" 404 -
+[2021-07-10 14:43:42,993] {app.py:1454} ERROR - Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "app.py", line 99, in metrics
+    response=json.dumps({"db_connection_count": connection_count, "post_count": p_count}),
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/juan_felipe/Library/Python/3.8/lib/python/site-packages/flask/json/__init__.py", line 56, in default
+    return super().default(o)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Row is not JSON serializable
+[2021-07-10 14:43:43,006] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:43:43] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+[2021-07-10 14:47:55,596] {_internal.py:225} WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2021-07-10 14:47:55,597] {_internal.py:225} INFO -  * Running on http://192.168.0.9:3111/ (Press CTRL+C to quit)
+[2021-07-10 14:47:59,714] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:47:59] "GET / HTTP/1.1" 200 -
+[2021-07-10 14:47:59,803] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:47:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+[2021-07-10 14:48:04,963] {app.py:105} INFO - Metrics request successfull
+[2021-07-10 14:48:04,963] {_internal.py:225} INFO - 192.168.0.9 - - [10/Jul/2021 14:48:04] "GET /metrics HTTP/1.1" 200 -
